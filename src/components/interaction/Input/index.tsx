@@ -1,7 +1,12 @@
-import { TextInput } from "react-native";
+import React from 'react';
+// import { TextInput } from 'react-native';
 
-import { S } from "./units";
+// import { S } from './units';
 
-export const Input = () => {
-  return <TextInput style={S.input} />;
+import * as S from './units';
+
+export const Input = ({ ...props }) => {
+    // return <TextInput style={S.input} />;
+
+    return <S.Input {...props} />;
 };
