@@ -18,14 +18,14 @@ export const Button: FC<T.IButton> = (props) => {
         >
             {props.iconPosition === 'left' && props.icon && (
                 // @ts-ignore: source prop
-                <S.Image source={{ uri: props.icon }} w={props.iconSize?.w} h={props.iconSize?.h} />
+                <S.Image source={props.icon} w={props.iconSize?.w} h={props.iconSize?.h} />
             )}
 
             <S.Text colorSheme={props.colorSheme}>{props.children}</S.Text>
 
             {props.iconPosition === 'right' && props.icon && (
                 // @ts-ignore: source prop
-                <S.Image source={{ uri: props.icon }} w={props.iconSize?.w} h={props.iconSize?.h} />
+                <S.Image source={props.icon} w={props.iconSize?.w} h={props.iconSize?.h} />
             )}
         </S.Button>
     );

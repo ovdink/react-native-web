@@ -2,8 +2,8 @@ import { StyleSheet } from 'react-native';
 
 export const S = StyleSheet.create({
     logoImage: {
-        width: '160px',
-        height: '65px',
+        width: 160,
+        height: 65,
     },
 
     imageContainer: {

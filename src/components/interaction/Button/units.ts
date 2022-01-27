@@ -16,7 +16,7 @@ export const Button = styled.TouchableOpacity<{ colorSheme?: TColorSheme; width?
     height: 50px;
 
     text-align: center;
-    cursor: pointer;
+    /* cursor: pointer; */
 `;
 
 export const Text = styled.Text<{ colorSheme?: TColorSheme }>`
@@ -24,7 +24,7 @@ export const Text = styled.Text<{ colorSheme?: TColorSheme }>`
     line-height: 20px;
     font-weight: bold;
 
-    color: ${({ colorSheme = 'primary' }) => (colorSheme === 'primary' ? '#ffffff' : '#007aff')}; ;
+    color: ${({ colorSheme = 'primary' }) => (colorSheme === 'primary' ? '#ffffff' : '#007aff')};
 `;
 
 export const Image = styled.Image<{ w?: number; h?: number }>`
